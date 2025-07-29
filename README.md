@@ -29,15 +29,27 @@ Listable is a sleek, modern web application built with **Next.js** that helps us
 
 ## 📁 Project Structure
 components/
+
 ├── collection-modal.tsx # Modal for creating/editing collections
+
 ├── collections.tsx # Grid view of collections
+
 ├── ui/
+
 │ ├── chat-field.tsx # Floating chat assistant
+
 │ └── mosaic-grid.tsx # Reusable grid layout
+
 pages/
+
 ├── api/
+
 │ ├── collections/ # RESTful endpoints for collections
+
 │ ├── mailer/send.ts # Send email via form modal
+
 │ └── chat/ask.ts # Chat interaction with OpenAI
+
 ├── listies.tsx # View filtered Listies by collection
+
 ├── index.tsx # Home / landing view
