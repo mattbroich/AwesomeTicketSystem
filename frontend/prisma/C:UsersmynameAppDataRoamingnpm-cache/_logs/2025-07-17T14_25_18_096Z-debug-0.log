@@ -1,0 +1,937 @@
+0 verbose cli /Users/polite/.nvm/versions/node/v22.17.1/bin/node /Users/polite/.nvm/versions/node/v22.17.1/bin/npm
+1 info using npm@10.9.2
+2 info using node@v22.17.1
+3 silly config load:file:/Users/polite/.nvm/versions/node/v22.17.1/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/.npmrc
+5 silly config load:file:/Users/polite/.npmrc
+6 silly config load:file:/Users/polite/.npm-global/etc/npmrc
+7 verbose title npm i jsonwebtoken
+8 verbose argv "i" "jsonwebtoken"
+9 verbose logfile logs-max:10 dir:/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/prisma/C:UsersmynameAppDataRoamingnpm-cache/_logs/2025-07-17T14_25_18_096Z-
+10 verbose logfile /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/prisma/C:UsersmynameAppDataRoamingnpm-cache/_logs/2025-07-17T14_25_18_096Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly idealTree buildDeps
+14 silly fetch manifest jsonwebtoken@*
+15 silly packumentCache full:https://registry.npmjs.org/jsonwebtoken cache-miss
+16 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules/prisma
+17 http fetch GET 200 https://registry.npmjs.org/jsonwebtoken 442ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/jsonwebtoken set size:undefined disposed:false
+19 silly placeDep ROOT jsonwebtoken@9.0.2 OK for: frontend@0.1.0 want: *
+20 silly fetch manifest jws@^3.2.2
+21 silly packumentCache full:https://registry.npmjs.org/jws cache-miss
+22 silly fetch manifest lodash.once@^4.0.0
+23 silly packumentCache full:https://registry.npmjs.org/lodash.once cache-miss
+24 silly fetch manifest lodash.includes@^4.3.0
+25 silly packumentCache full:https://registry.npmjs.org/lodash.includes cache-miss
+26 http fetch GET 200 https://registry.npmjs.org/jws 80ms (cache miss)
+27 silly packumentCache full:https://registry.npmjs.org/jws set size:undefined disposed:false
+28 silly fetch manifest lodash.isnumber@^3.0.3
+29 silly packumentCache full:https://registry.npmjs.org/lodash.isnumber cache-miss
+30 http fetch GET 200 https://registry.npmjs.org/lodash.isnumber 71ms (cache miss)
+31 silly packumentCache full:https://registry.npmjs.org/lodash.isnumber set size:undefined disposed:false
+32 silly fetch manifest lodash.isstring@^4.0.1
+33 silly packumentCache full:https://registry.npmjs.org/lodash.isstring cache-miss
+34 http fetch GET 200 https://registry.npmjs.org/lodash.once 176ms (cache miss)
+35 silly packumentCache full:https://registry.npmjs.org/lodash.once set size:undefined disposed:false
+36 silly fetch manifest lodash.isboolean@^3.0.3
+37 silly packumentCache full:https://registry.npmjs.org/lodash.isboolean cache-miss
+38 http fetch GET 200 https://registry.npmjs.org/lodash.includes 186ms (cache miss)
+39 silly packumentCache full:https://registry.npmjs.org/lodash.includes set size:undefined disposed:false
+40 silly fetch manifest lodash.isinteger@^4.0.4
+41 silly packumentCache full:https://registry.npmjs.org/lodash.isinteger cache-miss
+42 http fetch GET 200 https://registry.npmjs.org/lodash.isboolean 58ms (cache miss)
+43 silly packumentCache full:https://registry.npmjs.org/lodash.isboolean set size:undefined disposed:false
+44 silly fetch manifest lodash.isplainobject@^4.0.6
+45 silly packumentCache full:https://registry.npmjs.org/lodash.isplainobject cache-miss
+46 http fetch GET 200 https://registry.npmjs.org/lodash.isstring 95ms (cache miss)
+47 silly packumentCache full:https://registry.npmjs.org/lodash.isstring set size:undefined disposed:false
+48 http fetch GET 200 https://registry.npmjs.org/lodash.isinteger 64ms (cache miss)
+49 silly packumentCache full:https://registry.npmjs.org/lodash.isinteger set size:undefined disposed:false
+50 http fetch GET 200 https://registry.npmjs.org/lodash.isplainobject 61ms (cache miss)
+51 silly packumentCache full:https://registry.npmjs.org/lodash.isplainobject set size:undefined disposed:false
+52 silly placeDep ROOT jws@3.2.2 OK for: jsonwebtoken@9.0.2 want: ^3.2.2
+53 silly placeDep ROOT lodash.includes@4.3.0 OK for: jsonwebtoken@9.0.2 want: ^4.3.0
+54 silly placeDep ROOT lodash.isboolean@3.0.3 OK for: jsonwebtoken@9.0.2 want: ^3.0.3
+55 silly placeDep ROOT lodash.isinteger@4.0.4 OK for: jsonwebtoken@9.0.2 want: ^4.0.4
+56 silly placeDep ROOT lodash.isnumber@3.0.3 OK for: jsonwebtoken@9.0.2 want: ^3.0.3
+57 silly placeDep ROOT lodash.isplainobject@4.0.6 OK for: jsonwebtoken@9.0.2 want: ^4.0.6
+58 silly placeDep ROOT lodash.isstring@4.0.1 OK for: jsonwebtoken@9.0.2 want: ^4.0.1
+59 silly placeDep ROOT lodash.once@4.1.1 OK for: jsonwebtoken@9.0.2 want: ^4.0.0
+60 silly fetch manifest jwa@^1.4.1
+61 silly packumentCache full:https://registry.npmjs.org/jwa cache-miss
+62 silly fetch manifest safe-buffer@^5.0.1
+63 silly packumentCache full:https://registry.npmjs.org/safe-buffer cache-miss
+64 http fetch GET 200 https://registry.npmjs.org/safe-buffer 65ms (cache miss)
+65 silly packumentCache full:https://registry.npmjs.org/safe-buffer set size:undefined disposed:false
+66 http fetch GET 200 https://registry.npmjs.org/jwa 115ms (cache miss)
+67 silly packumentCache full:https://registry.npmjs.org/jwa set size:undefined disposed:false
+68 silly placeDep ROOT jwa@1.4.2 OK for: jws@3.2.2 want: ^1.4.1
+69 silly placeDep ROOT safe-buffer@5.2.1 OK for: jws@3.2.2 want: ^5.0.1
+70 silly fetch manifest ecdsa-sig-formatter@1.0.11
+71 silly packumentCache full:https://registry.npmjs.org/ecdsa-sig-formatter cache-miss
+72 silly fetch manifest buffer-equal-constant-time@^1.0.1
+73 silly packumentCache full:https://registry.npmjs.org/buffer-equal-constant-time cache-miss
+74 http fetch GET 200 https://registry.npmjs.org/ecdsa-sig-formatter 57ms (cache miss)
+75 silly packumentCache full:https://registry.npmjs.org/ecdsa-sig-formatter set size:undefined disposed:false
+76 http fetch GET 200 https://registry.npmjs.org/buffer-equal-constant-time 77ms (cache miss)
+77 silly packumentCache full:https://registry.npmjs.org/buffer-equal-constant-time set size:undefined disposed:false
+78 silly placeDep ROOT buffer-equal-constant-time@1.0.1 OK for: jwa@1.4.2 want: ^1.0.1
+79 silly placeDep ROOT ecdsa-sig-formatter@1.0.11 OK for: jwa@1.4.2 want: 1.0.11
+80 silly reify moves {}
+81 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@tailwindcss/oxide-wasm32-wasi
+82 silly reify mark deleted [
+82 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@tailwindcss/oxide-wasm32-wasi'
+82 silly reify ]
+83 silly audit bulk request {
+83 silly audit   '@alloc/quick-lru': [ '5.2.0' ],
+83 silly audit   '@ampproject/remapping': [ '2.3.0' ],
+83 silly audit   '@babel/runtime': [ '7.27.6' ],
+83 silly audit   '@emnapi/core': [ '1.4.4' ],
+83 silly audit   '@emnapi/runtime': [ '1.4.4' ],
+83 silly audit   '@emnapi/wasi-threads': [ '1.0.3' ],
+83 silly audit   '@eslint-community/eslint-utils': [ '4.7.0' ],
+83 silly audit   'eslint-visitor-keys': [ '3.4.3', '4.2.1' ],
+83 silly audit   '@eslint-community/regexpp': [ '4.12.1' ],
+83 silly audit   '@eslint/config-array': [ '0.21.0' ],
+83 silly audit   '@eslint/config-helpers': [ '0.3.0' ],
+83 silly audit   '@eslint/core': [ '0.15.1' ],
+83 silly audit   '@eslint/eslintrc': [ '3.3.1' ],
+83 silly audit   '@eslint/js': [ '9.31.0' ],
+83 silly audit   '@eslint/object-schema': [ '2.1.6' ],
+83 silly audit   '@eslint/plugin-kit': [ '0.3.3' ],
+83 silly audit   '@hookform/resolvers': [ '5.1.1' ],
+83 silly audit   '@humanfs/core': [ '0.19.1' ],
+83 silly audit   '@humanfs/node': [ '0.16.6' ],
+83 silly audit   '@humanwhocodes/retry': [ '0.3.1', '0.4.3' ],
+83 silly audit   '@humanwhocodes/module-importer': [ '1.0.1' ],
+83 silly audit   '@img/sharp-darwin-arm64': [ '0.34.3' ],
+83 silly audit   '@img/sharp-darwin-x64': [ '0.34.3' ],
+83 silly audit   '@img/sharp-libvips-darwin-arm64': [ '1.2.0' ],
+83 silly audit   '@img/sharp-libvips-darwin-x64': [ '1.2.0' ],
+83 silly audit   '@img/sharp-libvips-linux-arm': [ '1.2.0' ],
+83 silly audit   '@img/sharp-libvips-linux-arm64': [ '1.2.0' ],
+83 silly audit   '@img/sharp-libvips-linux-ppc64': [ '1.2.0' ],
+83 silly audit   '@img/sharp-libvips-linux-s390x': [ '1.2.0' ],
+83 silly audit   '@img/sharp-libvips-linux-x64': [ '1.2.0' ],
+83 silly audit   '@img/sharp-libvips-linuxmusl-arm64': [ '1.2.0' ],
+83 silly audit   '@img/sharp-libvips-linuxmusl-x64': [ '1.2.0' ],
+83 silly audit   '@img/sharp-linux-arm': [ '0.34.3' ],
+83 silly audit   '@img/sharp-linux-arm64': [ '0.34.3' ],
+83 silly audit   '@img/sharp-linux-ppc64': [ '0.34.3' ],
+83 silly audit   '@img/sharp-linux-s390x': [ '0.34.3' ],
+83 silly audit   '@img/sharp-linux-x64': [ '0.34.3' ],
+83 silly audit   '@img/sharp-linuxmusl-arm64': [ '0.34.3' ],
+83 silly audit   '@img/sharp-linuxmusl-x64': [ '0.34.3' ],
+83 silly audit   '@img/sharp-wasm32': [ '0.34.3' ],
+83 silly audit   '@img/sharp-win32-arm64': [ '0.34.3' ],
+83 silly audit   '@img/sharp-win32-ia32': [ '0.34.3' ],
+83 silly audit   '@img/sharp-win32-x64': [ '0.34.3' ],
+83 silly audit   '@isaacs/fs-minipass': [ '4.0.1' ],
+83 silly audit   '@jridgewell/gen-mapping': [ '0.3.12' ],
+83 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+83 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.4' ],
+83 silly audit   '@jridgewell/trace-mapping': [ '0.3.29' ],
+83 silly audit   '@napi-rs/wasm-runtime': [ '0.2.12' ],
+83 silly audit   '@neondatabase/serverless': [ '0.9.5' ],
+83 silly audit   '@next/env': [ '15.3.5' ],
+83 silly audit   '@next/eslint-plugin-next': [ '15.3.5' ],
+83 silly audit   '@next/swc-darwin-arm64': [ '15.3.5' ],
+83 silly audit   '@next/swc-darwin-x64': [ '15.3.5' ],
+83 silly audit   '@next/swc-linux-arm64-gnu': [ '15.3.5' ],
+83 silly audit   '@next/swc-linux-arm64-musl': [ '15.3.5' ],
+83 silly audit   '@next/swc-linux-x64-gnu': [ '15.3.5' ],
+83 silly audit   '@next/swc-linux-x64-musl': [ '15.3.5' ],
+83 silly audit   '@next/swc-win32-arm64-msvc': [ '15.3.5' ],
+83 silly audit   '@next/swc-win32-x64-msvc': [ '15.3.5' ],
+83 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+83 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+83 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+83 silly audit   '@nolyfill/is-core-module': [ '1.0.39' ],
+83 silly audit   '@panva/hkdf': [ '1.2.1' ],
+83 silly audit   '@prisma/client': [ '6.12.0' ],
+83 silly audit   '@prisma/config': [ '6.12.0' ],
+83 silly audit   '@prisma/debug': [ '6.12.0' ],
+83 silly audit   '@prisma/engines': [ '6.12.0' ],
+83 silly audit   '@prisma/engines-version': [ '6.12.0-15.8047c96bbd92db98a2abc7c9323ce77c02c89dbc' ],
+83 silly audit   '@prisma/extension-accelerate': [ '2.0.2' ],
+83 silly audit   '@prisma/fetch-engine': [ '6.12.0' ],
+83 silly audit   '@prisma/get-platform': [ '6.12.0' ],
+83 silly audit   '@radix-ui/primitive': [ '1.1.2' ],
+83 silly audit   '@radix-ui/react-collection': [ '1.1.7' ],
+83 silly audit   '@radix-ui/react-compose-refs': [ '1.1.2' ],
+83 silly audit   '@radix-ui/react-context': [ '1.1.2' ],
+83 silly audit   '@radix-ui/react-dismissable-layer': [ '1.1.10' ],
+83 silly audit   '@radix-ui/react-label': [ '2.1.7' ],
+83 silly audit   '@radix-ui/react-portal': [ '1.1.9' ],
+83 silly audit   '@radix-ui/react-presence': [ '1.1.4' ],
+83 silly audit   '@radix-ui/react-primitive': [ '2.1.3' ],
+83 silly audit   '@radix-ui/react-slot': [ '1.2.3' ],
+83 silly audit   '@radix-ui/react-toast': [ '1.2.14' ],
+83 silly audit   '@radix-ui/react-use-callback-ref': [ '1.1.1' ],
+83 silly audit   '@radix-ui/react-use-controllable-state': [ '1.2.2' ],
+83 silly audit   '@radix-ui/react-use-effect-event': [ '0.0.2' ],
+83 silly audit   '@radix-ui/react-use-escape-keydown': [ '1.1.1' ],
+83 silly audit   '@radix-ui/react-use-layout-effect': [ '1.1.1' ],
+83 silly audit   '@radix-ui/react-visually-hidden': [ '1.2.3' ],
+83 silly audit   '@rtsao/scc': [ '1.1.0' ],
+83 silly audit   '@rushstack/eslint-patch': [ '1.12.0' ],
+83 silly audit   '@standard-schema/utils': [ '0.3.0' ],
+83 silly audit   '@swc/counter': [ '0.1.3' ],
+83 silly audit   '@swc/helpers': [ '0.5.15' ],
+83 silly audit   '@tailwindcss/node': [ '4.1.11' ],
+83 silly audit   '@tailwindcss/oxide': [ '4.1.11' ],
+83 silly audit   '@tailwindcss/oxide-android-arm64': [ '4.1.11' ],
+83 silly audit   '@tailwindcss/oxide-darwin-arm64': [ '4.1.11' ],
+83 silly audit   '@tailwindcss/oxide-darwin-x64': [ '4.1.11' ],
+83 silly audit   '@tailwindcss/oxide-freebsd-x64': [ '4.1.11' ],
+83 silly audit   '@tailwindcss/oxide-linux-arm-gnueabihf': [ '4.1.11' ],
+83 silly audit   '@tailwindcss/oxide-linux-arm64-gnu': [ '4.1.11' ],
+83 silly audit   '@tailwindcss/oxide-linux-arm64-musl': [ '4.1.11' ],
+83 silly audit   '@tailwindcss/oxide-linux-x64-gnu': [ '4.1.11' ],
+83 silly audit   '@tailwindcss/oxide-linux-x64-musl': [ '4.1.11' ],
+83 silly audit   '@tailwindcss/oxide-win32-arm64-msvc': [ '4.1.11' ],
+83 silly audit   '@tailwindcss/oxide-win32-x64-msvc': [ '4.1.11' ],
+83 silly audit   '@tailwindcss/postcss': [ '4.1.11' ],
+83 silly audit   '@tybys/wasm-util': [ '0.10.0' ],
+83 silly audit   '@types/bcrypt': [ '5.0.2' ],
+83 silly audit   '@types/estree': [ '1.0.8' ],
+83 silly audit   '@types/json-schema': [ '7.0.15' ],
+83 silly audit   '@types/json5': [ '0.0.29' ],
+83 silly audit   '@types/node': [ '20.19.7' ],
+83 silly audit   '@types/pg': [ '8.11.6' ],
+83 silly audit   '@types/react': [ '19.1.8' ],
+83 silly audit   '@types/react-dom': [ '19.1.6' ],
+83 silly audit   '@typescript-eslint/eslint-plugin': [ '8.37.0' ],
+83 silly audit   ignore: [ '7.0.5', '5.3.2' ],
+83 silly audit   '@typescript-eslint/parser': [ '8.37.0' ],
+83 silly audit   '@typescript-eslint/project-service': [ '8.37.0' ],
+83 silly audit   '@typescript-eslint/scope-manager': [ '8.37.0' ],
+83 silly audit   '@typescript-eslint/tsconfig-utils': [ '8.37.0' ],
+83 silly audit   '@typescript-eslint/type-utils': [ '8.37.0' ],
+83 silly audit   '@typescript-eslint/types': [ '8.37.0' ],
+83 silly audit   '@typescript-eslint/typescript-estree': [ '8.37.0' ],
+83 silly audit   'brace-expansion': [ '2.0.2', '1.1.12' ],
+83 silly audit   'fast-glob': [ '3.3.3', '3.3.1' ],
+83 silly audit   'glob-parent': [ '5.1.2', '6.0.2' ],
+83 silly audit   minimatch: [ '9.0.5', '3.1.2' ],
+83 silly audit   '@typescript-eslint/utils': [ '8.37.0' ],
+83 silly audit   '@typescript-eslint/visitor-keys': [ '8.37.0' ],
+83 silly audit   '@unrs/resolver-binding-android-arm-eabi': [ '1.11.1' ],
+83 silly audit   '@unrs/resolver-binding-android-arm64': [ '1.11.1' ],
+83 silly audit   '@unrs/resolver-binding-darwin-arm64': [ '1.11.1' ],
+83 silly audit   '@unrs/resolver-binding-darwin-x64': [ '1.11.1' ],
+83 silly audit   '@unrs/resolver-binding-freebsd-x64': [ '1.11.1' ],
+83 silly audit   '@unrs/resolver-binding-linux-arm-gnueabihf': [ '1.11.1' ],
+83 silly audit   '@unrs/resolver-binding-linux-arm-musleabihf': [ '1.11.1' ],
+83 silly audit   '@unrs/resolver-binding-linux-arm64-gnu': [ '1.11.1' ],
+83 silly audit   '@unrs/resolver-binding-linux-arm64-musl': [ '1.11.1' ],
+83 silly audit   '@unrs/resolver-binding-linux-ppc64-gnu': [ '1.11.1' ],
+83 silly audit   '@unrs/resolver-binding-linux-riscv64-gnu': [ '1.11.1' ],
+83 silly audit   '@unrs/resolver-binding-linux-riscv64-musl': [ '1.11.1' ],
+83 silly audit   '@unrs/resolver-binding-linux-s390x-gnu': [ '1.11.1' ],
+83 silly audit   '@unrs/resolver-binding-linux-x64-gnu': [ '1.11.1' ],
+83 silly audit   '@unrs/resolver-binding-linux-x64-musl': [ '1.11.1' ],
+83 silly audit   '@unrs/resolver-binding-wasm32-wasi': [ '1.11.1' ],
+83 silly audit   '@unrs/resolver-binding-win32-arm64-msvc': [ '1.11.1' ],
+83 silly audit   '@unrs/resolver-binding-win32-ia32-msvc': [ '1.11.1' ],
+83 silly audit   '@unrs/resolver-binding-win32-x64-msvc': [ '1.11.1' ],
+83 silly audit   '@vercel/postgres': [ '0.10.0' ],
+83 silly audit   acorn: [ '8.15.0' ],
+83 silly audit   'acorn-jsx': [ '5.3.2' ],
+83 silly audit   ajv: [ '6.12.6' ],
+83 silly audit   'ansi-styles': [ '4.3.0' ],
+83 silly audit   argparse: [ '2.0.1' ],
+83 silly audit   'aria-query': [ '5.3.2' ],
+83 silly audit   'array-buffer-byte-length': [ '1.0.2' ],
+83 silly audit   'array-includes': [ '3.1.9' ],
+83 silly audit   'array.prototype.findlast': [ '1.2.5' ],
+83 silly audit   'array.prototype.findlastindex': [ '1.2.6' ],
+83 silly audit   'array.prototype.flat': [ '1.3.3' ],
+83 silly audit   'array.prototype.flatmap': [ '1.3.3' ],
+83 silly audit   'array.prototype.tosorted': [ '1.1.4' ],
+83 silly audit   'arraybuffer.prototype.slice': [ '1.0.4' ],
+83 silly audit   'ast-types-flow': [ '0.0.8' ],
+83 silly audit   'async-function': [ '1.0.0' ],
+83 silly audit   'available-typed-arrays': [ '1.0.7' ],
+83 silly audit   'axe-core': [ '4.10.3' ],
+83 silly audit   'axobject-query': [ '4.1.0' ],
+83 silly audit   'balanced-match': [ '1.0.2' ],
+83 silly audit   bcrypt: [ '6.0.0' ],
+83 silly audit   braces: [ '3.0.3' ],
+83 silly audit   bufferutil: [ '4.0.9' ],
+83 silly audit   busboy: [ '1.6.0' ],
+83 silly audit   'call-bind': [ '1.0.8' ],
+83 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+83 silly audit   'call-bound': [ '1.0.4' ],
+83 silly audit   callsites: [ '3.1.0' ],
+83 silly audit   'caniuse-lite': [ '1.0.30001727' ],
+83 silly audit   chalk: [ '4.1.2', '5.4.1' ],
+83 silly audit   chownr: [ '3.0.0' ],
+83 silly audit   'class-variance-authority': [ '0.7.1' ],
+83 silly audit   'client-only': [ '0.0.1' ],
+83 silly audit   clsx: [ '2.1.1' ],
+83 silly audit   color: [ '4.2.3' ],
+83 silly audit   'color-convert': [ '2.0.1' ],
+83 silly audit   'color-name': [ '1.1.4' ],
+83 silly audit   'color-string': [ '1.9.1' ],
+83 silly audit   'concat-map': [ '0.0.1' ],
+83 silly audit   cookie: [ '0.7.2' ],
+83 silly audit   'cross-spawn': [ '7.0.6' ],
+83 silly audit   csstype: [ '3.1.3' ],
+83 silly audit   'damerau-levenshtein': [ '1.0.8' ],
+83 silly audit   'data-view-buffer': [ '1.0.2' ],
+83 silly audit   'data-view-byte-length': [ '1.0.2' ],
+83 silly audit   'data-view-byte-offset': [ '1.0.1' ],
+83 silly audit   debug: [ '4.4.1', '3.2.7' ],
+83 silly audit   'deep-is': [ '0.1.4' ],
+83 silly audit   'define-data-property': [ '1.1.4' ],
+83 silly audit   'define-properties': [ '1.2.1' ],
+83 silly audit   'detect-libc': [ '2.0.4' ],
+83 silly audit   doctrine: [ '2.1.0' ],
+83 silly audit   'dunder-proto': [ '1.0.1' ],
+83 silly audit   'emoji-regex': [ '9.2.2' ],
+83 silly audit   'enhanced-resolve': [ '5.18.2' ],
+83 silly audit   'es-abstract': [ '1.24.0' ],
+83 silly audit   'es-define-property': [ '1.0.1' ],
+83 silly audit   'es-errors': [ '1.3.0' ],
+83 silly audit   'es-iterator-helpers': [ '1.2.1' ],
+83 silly audit   'es-object-atoms': [ '1.1.1' ],
+83 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+83 silly audit   'es-shim-unscopables': [ '1.1.0' ],
+83 silly audit   'es-to-primitive': [ '1.3.0' ],
+83 silly audit   'escape-string-regexp': [ '4.0.0' ],
+83 silly audit   eslint: [ '9.31.0' ],
+83 silly audit   'eslint-config-next': [ '15.3.5' ],
+83 silly audit   'eslint-import-resolver-node': [ '0.3.9' ],
+83 silly audit   'eslint-import-resolver-typescript': [ '3.10.1' ],
+83 silly audit   'eslint-module-utils': [ '2.12.1' ],
+83 silly audit   'eslint-plugin-import': [ '2.32.0' ],
+83 silly audit   semver: [ '6.3.1', '7.7.2' ],
+83 silly audit   'eslint-plugin-jsx-a11y': [ '6.10.2' ],
+83 silly audit   'eslint-plugin-react': [ '7.37.5' ],
+83 silly audit   'eslint-plugin-react-hooks': [ '5.2.0' ],
+83 silly audit   resolve: [ '2.0.0-next.5', '1.22.10' ],
+83 silly audit   'eslint-scope': [ '8.4.0' ],
+83 silly audit   espree: [ '10.4.0' ],
+83 silly audit   esquery: [ '1.6.0' ],
+83 silly audit   esrecurse: [ '4.3.0' ],
+83 silly audit   estraverse: [ '5.3.0' ],
+83 silly audit   esutils: [ '2.0.3' ],
+83 silly audit   'fast-deep-equal': [ '3.1.3' ],
+83 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+83 silly audit   'fast-levenshtein': [ '2.0.6' ],
+83 silly audit   fastq: [ '1.19.1' ],
+83 silly audit   'file-entry-cache': [ '8.0.0' ],
+83 silly audit   'fill-range': [ '7.1.1' ],
+83 silly audit   'find-up': [ '5.0.0' ],
+83 silly audit   'flat-cache': [ '4.0.1' ],
+83 silly audit   flatted: [ '3.3.3' ],
+83 silly audit   'for-each': [ '0.3.5' ],
+83 silly audit   'function-bind': [ '1.1.2' ],
+83 silly audit   'function.prototype.name': [ '1.1.8' ],
+83 silly audit   'functions-have-names': [ '1.2.3' ],
+83 silly audit   'get-intrinsic': [ '1.3.0' ],
+83 silly audit   'get-proto': [ '1.0.1' ],
+83 silly audit   'get-symbol-description': [ '1.1.0' ],
+83 silly audit   'get-tsconfig': [ '4.10.1' ],
+83 silly audit   globals: [ '14.0.0' ],
+83 silly audit   globalthis: [ '1.0.4' ],
+83 silly audit   gopd: [ '1.2.0' ],
+83 silly audit   'graceful-fs': [ '4.2.11' ],
+83 silly audit   graphemer: [ '1.4.0' ],
+83 silly audit   'has-bigints': [ '1.1.0' ],
+83 silly audit   'has-flag': [ '4.0.0' ],
+83 silly audit   'has-property-descriptors': [ '1.0.2' ],
+83 silly audit   'has-proto': [ '1.2.0' ],
+83 silly audit   'has-symbols': [ '1.1.0' ],
+83 silly audit   'has-tostringtag': [ '1.0.2' ],
+83 silly audit   hasown: [ '2.0.2' ],
+83 silly audit   'import-fresh': [ '3.3.1' ],
+83 silly audit   imurmurhash: [ '0.1.4' ],
+83 silly audit   'internal-slot': [ '1.1.0' ],
+83 silly audit   'is-array-buffer': [ '3.0.5' ],
+83 silly audit   'is-arrayish': [ '0.3.2' ],
+83 silly audit   'is-async-function': [ '2.1.1' ],
+83 silly audit   'is-bigint': [ '1.1.0' ],
+83 silly audit   'is-boolean-object': [ '1.2.2' ],
+83 silly audit   'is-bun-module': [ '2.0.0' ],
+83 silly audit   'is-callable': [ '1.2.7' ],
+83 silly audit   'is-core-module': [ '2.16.1' ],
+83 silly audit   'is-data-view': [ '1.0.2' ],
+83 silly audit   'is-date-object': [ '1.1.0' ],
+83 silly audit   'is-extglob': [ '2.1.1' ],
+83 silly audit   'is-finalizationregistry': [ '1.1.1' ],
+83 silly audit   'is-generator-function': [ '1.1.0' ],
+83 silly audit   'is-glob': [ '4.0.3' ],
+83 silly audit   'is-map': [ '2.0.3' ],
+83 silly audit   'is-negative-zero': [ '2.0.3' ],
+83 silly audit   'is-number': [ '7.0.0' ],
+83 silly audit   'is-number-object': [ '1.1.1' ],
+83 silly audit   'is-regex': [ '1.2.1' ],
+83 silly audit   'is-set': [ '2.0.3' ],
+83 silly audit   'is-shared-array-buffer': [ '1.0.4' ],
+83 silly audit   'is-string': [ '1.1.1' ],
+83 silly audit   'is-symbol': [ '1.1.1' ],
+83 silly audit   'is-typed-array': [ '1.1.15' ],
+83 silly audit   'is-weakmap': [ '2.0.2' ],
+83 silly audit   'is-weakref': [ '1.1.1' ],
+83 silly audit   'is-weakset': [ '2.0.4' ],
+83 silly audit   isarray: [ '2.0.5' ],
+83 silly audit   isexe: [ '2.0.0' ],
+83 silly audit   'iterator.prototype': [ '1.1.5' ],
+83 silly audit   jiti: [ '2.4.2' ],
+83 silly audit   jose: [ '4.15.9' ],
+83 silly audit   'js-tokens': [ '4.0.0' ],
+83 silly audit   'js-yaml': [ '4.1.0' ],
+83 silly audit   'json-buffer': [ '3.0.1' ],
+83 silly audit   'json-schema-traverse': [ '0.4.1' ],
+83 silly audit   'json-stable-stringify-without-jsonify': [ '1.0.1' ],
+83 silly audit   json5: [ '1.0.2' ],
+83 silly audit   'jsx-ast-utils': [ '3.3.5' ],
+83 silly audit   keyv: [ '4.5.4' ],
+83 silly audit   'language-subtag-registry': [ '0.3.23' ],
+83 silly audit   'language-tags': [ '1.0.9' ],
+83 silly audit   levn: [ '0.4.1' ],
+83 silly audit   lightningcss: [ '1.30.1' ],
+83 silly audit   'lightningcss-darwin-arm64': [ '1.30.1' ],
+83 silly audit   'lightningcss-darwin-x64': [ '1.30.1' ],
+83 silly audit   'lightningcss-freebsd-x64': [ '1.30.1' ],
+83 silly audit   'lightningcss-linux-arm-gnueabihf': [ '1.30.1' ],
+83 silly audit   'lightningcss-linux-arm64-gnu': [ '1.30.1' ],
+83 silly audit   'lightningcss-linux-arm64-musl': [ '1.30.1' ],
+83 silly audit   'lightningcss-linux-x64-gnu': [ '1.30.1' ],
+83 silly audit   'lightningcss-linux-x64-musl': [ '1.30.1' ],
+83 silly audit   'lightningcss-win32-arm64-msvc': [ '1.30.1' ],
+83 silly audit   'lightningcss-win32-x64-msvc': [ '1.30.1' ],
+83 silly audit   'locate-path': [ '6.0.0' ],
+83 silly audit   'lodash.merge': [ '4.6.2' ],
+83 silly audit   'loose-envify': [ '1.4.0' ],
+83 silly audit   'lru-cache': [ '6.0.0' ],
+83 silly audit   yallist: [ '4.0.0', '5.0.0' ],
+83 silly audit   'lucide-react': [ '0.525.0' ],
+83 silly audit   'magic-string': [ '0.30.17' ],
+83 silly audit   'math-intrinsics': [ '1.1.0' ],
+83 silly audit   merge2: [ '1.4.1' ],
+83 silly audit   micromatch: [ '4.0.8' ],
+83 silly audit   minimist: [ '1.2.8' ],
+83 silly audit   minipass: [ '7.1.2' ],
+83 silly audit   minizlib: [ '3.0.2' ],
+83 silly audit   mkdirp: [ '3.0.1' ],
+83 silly audit   ms: [ '2.1.3' ],
+83 silly audit   nanoid: [ '3.3.11' ],
+83 silly audit   'napi-postinstall': [ '0.3.0' ],
+83 silly audit   'natural-compare': [ '1.4.0' ],
+83 silly audit   next: [ '15.3.5' ],
+83 silly audit   'next-auth': [ '4.24.11' ],
+83 silly audit   postcss: [ '8.4.31', '8.5.6' ],
+83 silly audit   'node-addon-api': [ '8.5.0' ],
+83 silly audit   'node-gyp-build': [ '4.8.4' ],
+83 silly audit   oauth: [ '0.9.15' ],
+83 silly audit   'object-assign': [ '4.1.1' ],
+83 silly audit   'object-hash': [ '2.2.0' ],
+83 silly audit   'object-inspect': [ '1.13.4' ],
+83 silly audit   'object-keys': [ '1.1.1' ],
+83 silly audit   'object.assign': [ '4.1.7' ],
+83 silly audit   'object.entries': [ '1.1.9' ],
+83 silly audit   'object.fromentries': [ '2.0.8' ],
+83 silly audit   'object.groupby': [ '1.0.3' ],
+83 silly audit   'object.values': [ '1.2.1' ],
+83 silly audit   obuf: [ '1.1.2' ],
+83 silly audit   'oidc-token-hash': [ '5.1.0' ],
+83 silly audit   'openid-client': [ '5.7.1' ],
+83 silly audit   optionator: [ '0.9.4' ],
+83 silly audit   'own-keys': [ '1.0.1' ],
+83 silly audit   'p-limit': [ '3.1.0' ],
+83 silly audit   'p-locate': [ '5.0.0' ],
+83 silly audit   'parent-module': [ '1.0.1' ],
+83 silly audit   'path-exists': [ '4.0.0' ],
+83 silly audit   'path-key': [ '3.1.1' ],
+83 silly audit   'path-parse': [ '1.0.7' ],
+83 silly audit   'pg-int8': [ '1.0.1' ],
+83 silly audit   'pg-numeric': [ '1.0.2' ],
+83 silly audit   'pg-protocol': [ '1.10.3' ],
+83 silly audit   'pg-types': [ '4.0.2' ],
+83 silly audit   picocolors: [ '1.1.1' ],
+83 silly audit   picomatch: [ '2.3.1', '4.0.2' ],
+83 silly audit   'possible-typed-array-names': [ '1.1.0' ],
+83 silly audit   'postgres-array': [ '3.0.4' ],
+83 silly audit   'postgres-bytea': [ '3.0.0' ],
+83 silly audit   'postgres-date': [ '2.1.0' ],
+83 silly audit   'postgres-interval': [ '3.0.0' ],
+83 silly audit   'postgres-range': [ '1.1.4' ],
+83 silly audit   preact: [ '10.26.9' ],
+83 silly audit   'preact-render-to-string': [ '5.2.6' ],
+83 silly audit   'prelude-ls': [ '1.2.1' ],
+83 silly audit   'pretty-format': [ '3.8.0' ],
+83 silly audit   prisma: [ '6.12.0' ],
+83 silly audit   'prop-types': [ '15.8.1' ],
+83 silly audit   punycode: [ '2.3.1' ],
+83 silly audit   'queue-microtask': [ '1.2.3' ],
+83 silly audit   react: [ '19.1.0' ],
+83 silly audit   'react-dom': [ '19.1.0' ],
+83 silly audit   'react-hook-form': [ '7.60.0' ],
+83 silly audit   'react-is': [ '16.13.1' ],
+83 silly audit   'reflect.getprototypeof': [ '1.0.10' ],
+83 silly audit   'regexp.prototype.flags': [ '1.5.4' ],
+83 silly audit   'resolve-from': [ '4.0.0' ],
+83 silly audit   'resolve-pkg-maps': [ '1.0.0' ],
+83 silly audit   reusify: [ '1.1.0' ],
+83 silly audit   'run-parallel': [ '1.2.0' ],
+83 silly audit   'safe-array-concat': [ '1.1.3' ],
+83 silly audit   'safe-push-apply': [ '1.0.0' ],
+83 silly audit   'safe-regex-test': [ '1.1.0' ],
+83 silly audit   scheduler: [ '0.26.0' ],
+83 silly audit   'set-function-length': [ '1.2.2' ],
+83 silly audit   'set-function-name': [ '2.0.2' ],
+83 silly audit   'set-proto': [ '1.0.0' ],
+83 silly audit   'shadcn-ui': [ '0.9.5' ],
+83 silly audit   sharp: [ '0.34.3' ],
+83 silly audit   'shebang-command': [ '2.0.0' ],
+83 silly audit   'shebang-regex': [ '3.0.0' ],
+83 silly audit   'side-channel': [ '1.1.0' ],
+83 silly audit   'side-channel-list': [ '1.0.0' ],
+83 silly audit   'side-channel-map': [ '1.0.1' ],
+83 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+83 silly audit   'simple-swizzle': [ '0.2.2' ],
+83 silly audit   'source-map-js': [ '1.2.1' ],
+83 silly audit   'stable-hash': [ '0.0.5' ],
+83 silly audit   'stop-iteration-iterator': [ '1.1.0' ],
+83 silly audit   streamsearch: [ '1.1.0' ],
+83 silly audit   'string.prototype.includes': [ '2.0.1' ],
+83 silly audit   'string.prototype.matchall': [ '4.0.12' ],
+83 silly audit   'string.prototype.repeat': [ '1.0.0' ],
+83 silly audit   'string.prototype.trim': [ '1.2.10' ],
+83 silly audit   'string.prototype.trimend': [ '1.0.9' ],
+83 silly audit   'string.prototype.trimstart': [ '1.0.8' ],
+83 silly audit   'strip-bom': [ '3.0.0' ],
+83 silly audit   'strip-json-comments': [ '3.1.1' ],
+83 silly audit   'styled-jsx': [ '5.1.6' ],
+83 silly audit   'supports-color': [ '7.2.0' ],
+83 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+83 silly audit   'tailwind-merge': [ '3.3.1' ],
+83 silly audit   tailwindcss: [ '4.1.11' ],
+83 silly audit   tapable: [ '2.2.2' ],
+83 silly audit   tar: [ '7.4.3' ],
+83 silly audit   tinyglobby: [ '0.2.14' ],
+83 silly audit   fdir: [ '6.4.6' ],
+83 silly audit   'to-regex-range': [ '5.0.1' ],
+83 silly audit   'ts-api-utils': [ '2.1.0' ],
+83 silly audit   'tsconfig-paths': [ '3.15.0' ],
+83 silly audit   tslib: [ '2.8.1' ],
+83 silly audit   'type-check': [ '0.4.0' ],
+83 silly audit   'typed-array-buffer': [ '1.0.3' ],
+83 silly audit   'typed-array-byte-length': [ '1.0.3' ],
+83 silly audit   'typed-array-byte-offset': [ '1.0.4' ],
+83 silly audit   'typed-array-length': [ '1.0.7' ],
+83 silly audit   typescript: [ '5.8.3' ],
+83 silly audit   'unbox-primitive': [ '1.1.0' ],
+83 silly audit   'undici-types': [ '6.21.0' ],
+83 silly audit   'unrs-resolver': [ '1.11.1' ],
+83 silly audit   'uri-js': [ '4.4.1' ],
+83 silly audit   uuid: [ '8.3.2' ],
+83 silly audit   which: [ '2.0.2' ],
+83 silly audit   'which-boxed-primitive': [ '1.1.1' ],
+83 silly audit   'which-builtin-type': [ '1.2.1' ],
+83 silly audit   'which-collection': [ '1.0.2' ],
+83 silly audit   'which-typed-array': [ '1.1.19' ],
+83 silly audit   'word-wrap': [ '1.2.5' ],
+83 silly audit   ws: [ '8.18.3' ],
+83 silly audit   'yocto-queue': [ '0.1.0' ],
+83 silly audit   zod: [ '4.0.5' ],
+83 silly audit   jsonwebtoken: [ '9.0.2' ],
+83 silly audit   jws: [ '3.2.2' ],
+83 silly audit   'lodash.includes': [ '4.3.0' ],
+83 silly audit   'lodash.isboolean': [ '3.0.3' ],
+83 silly audit   'lodash.isinteger': [ '4.0.4' ],
+83 silly audit   'lodash.isnumber': [ '3.0.3' ],
+83 silly audit   'lodash.isplainobject': [ '4.0.6' ],
+83 silly audit   'lodash.isstring': [ '4.0.1' ],
+83 silly audit   'lodash.once': [ '4.1.1' ],
+83 silly audit   jwa: [ '1.4.2' ],
+83 silly audit   'safe-buffer': [ '5.2.1' ],
+83 silly audit   'buffer-equal-constant-time': [ '1.0.1' ],
+83 silly audit   'ecdsa-sig-formatter': [ '1.0.11' ],
+83 silly audit   '@tailwindcss/oxide-wasm32-wasi': [ '4.1.11' ]
+83 silly audit }
+84 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/lightningcss-win32-x64-msvc
+85 silly reify mark deleted [
+85 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/lightningcss-win32-x64-msvc'
+85 silly reify ]
+86 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/lightningcss-win32-arm64-msvc
+87 silly reify mark deleted [
+87 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/lightningcss-win32-arm64-msvc'
+87 silly reify ]
+88 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/lightningcss-linux-x64-musl
+89 silly reify mark deleted [
+89 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/lightningcss-linux-x64-musl'
+89 silly reify ]
+90 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/lightningcss-linux-x64-gnu
+91 silly reify mark deleted [
+91 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/lightningcss-linux-x64-gnu'
+91 silly reify ]
+92 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/lightningcss-linux-arm64-musl
+93 silly reify mark deleted [
+93 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/lightningcss-linux-arm64-musl'
+93 silly reify ]
+94 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/lightningcss-linux-arm64-gnu
+95 silly reify mark deleted [
+95 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/lightningcss-linux-arm64-gnu'
+95 silly reify ]
+96 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/lightningcss-linux-arm-gnueabihf
+97 silly reify mark deleted [
+97 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/lightningcss-linux-arm-gnueabihf'
+97 silly reify ]
+98 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/lightningcss-freebsd-x64
+99 silly reify mark deleted [
+99 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/lightningcss-freebsd-x64'
+99 silly reify ]
+100 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/lightningcss-darwin-arm64
+101 silly reify mark deleted [
+101 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/lightningcss-darwin-arm64'
+101 silly reify ]
+102 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-win32-x64-msvc
+103 silly reify mark deleted [
+103 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-win32-x64-msvc'
+103 silly reify ]
+104 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-win32-ia32-msvc
+105 silly reify mark deleted [
+105 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-win32-ia32-msvc'
+105 silly reify ]
+106 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-win32-arm64-msvc
+107 silly reify mark deleted [
+107 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-win32-arm64-msvc'
+107 silly reify ]
+108 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-wasm32-wasi
+109 silly reify mark deleted [
+109 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-wasm32-wasi'
+109 silly reify ]
+110 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-linux-x64-musl
+111 silly reify mark deleted [
+111 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-linux-x64-musl'
+111 silly reify ]
+112 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-linux-x64-gnu
+113 silly reify mark deleted [
+113 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-linux-x64-gnu'
+113 silly reify ]
+114 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-linux-s390x-gnu
+115 silly reify mark deleted [
+115 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-linux-s390x-gnu'
+115 silly reify ]
+116 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-linux-riscv64-musl
+117 silly reify mark deleted [
+117 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-linux-riscv64-musl'
+117 silly reify ]
+118 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-linux-riscv64-gnu
+119 silly reify mark deleted [
+119 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-linux-riscv64-gnu'
+119 silly reify ]
+120 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-linux-ppc64-gnu
+121 silly reify mark deleted [
+121 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-linux-ppc64-gnu'
+121 silly reify ]
+122 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-linux-arm64-musl
+123 silly reify mark deleted [
+123 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-linux-arm64-musl'
+123 silly reify ]
+124 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-linux-arm64-gnu
+125 silly reify mark deleted [
+125 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-linux-arm64-gnu'
+125 silly reify ]
+126 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-linux-arm-musleabihf
+127 silly reify mark deleted [
+127 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-linux-arm-musleabihf'
+127 silly reify ]
+128 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-linux-arm-gnueabihf
+129 silly reify mark deleted [
+129 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-linux-arm-gnueabihf'
+129 silly reify ]
+130 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-freebsd-x64
+131 silly reify mark deleted [
+131 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-freebsd-x64'
+131 silly reify ]
+132 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-darwin-arm64
+133 silly reify mark deleted [
+133 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-darwin-arm64'
+133 silly reify ]
+134 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-android-arm64
+135 silly reify mark deleted [
+135 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-android-arm64'
+135 silly reify ]
+136 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-android-arm-eabi
+137 silly reify mark deleted [
+137 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@unrs/resolver-binding-android-arm-eabi'
+137 silly reify ]
+138 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@tailwindcss/oxide-win32-x64-msvc
+139 silly reify mark deleted [
+139 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@tailwindcss/oxide-win32-x64-msvc'
+139 silly reify ]
+140 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@tailwindcss/oxide-win32-arm64-msvc
+141 silly reify mark deleted [
+141 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@tailwindcss/oxide-win32-arm64-msvc'
+141 silly reify ]
+142 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@tailwindcss/oxide-linux-x64-musl
+143 silly reify mark deleted [
+143 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@tailwindcss/oxide-linux-x64-musl'
+143 silly reify ]
+144 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@tailwindcss/oxide-linux-x64-gnu
+145 silly reify mark deleted [
+145 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@tailwindcss/oxide-linux-x64-gnu'
+145 silly reify ]
+146 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@tailwindcss/oxide-linux-arm64-musl
+147 silly reify mark deleted [
+147 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@tailwindcss/oxide-linux-arm64-musl'
+147 silly reify ]
+148 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@tailwindcss/oxide-linux-arm64-gnu
+149 silly reify mark deleted [
+149 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@tailwindcss/oxide-linux-arm64-gnu'
+149 silly reify ]
+150 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@tailwindcss/oxide-linux-arm-gnueabihf
+151 silly reify mark deleted [
+151 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@tailwindcss/oxide-linux-arm-gnueabihf'
+151 silly reify ]
+152 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@tailwindcss/oxide-freebsd-x64
+153 silly reify mark deleted [
+153 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@tailwindcss/oxide-freebsd-x64'
+153 silly reify ]
+154 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@tailwindcss/oxide-darwin-arm64
+155 silly reify mark deleted [
+155 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@tailwindcss/oxide-darwin-arm64'
+155 silly reify ]
+156 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@tailwindcss/oxide-android-arm64
+157 silly reify mark deleted [
+157 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@tailwindcss/oxide-android-arm64'
+157 silly reify ]
+158 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@next/swc-win32-x64-msvc
+159 silly reify mark deleted [
+159 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@next/swc-win32-x64-msvc'
+159 silly reify ]
+160 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@next/swc-win32-arm64-msvc
+161 silly reify mark deleted [
+161 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@next/swc-win32-arm64-msvc'
+161 silly reify ]
+162 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@next/swc-linux-x64-musl
+163 silly reify mark deleted [
+163 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@next/swc-linux-x64-musl'
+163 silly reify ]
+164 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@next/swc-linux-x64-gnu
+165 silly reify mark deleted [
+165 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@next/swc-linux-x64-gnu'
+165 silly reify ]
+166 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@next/swc-linux-arm64-musl
+167 silly reify mark deleted [
+167 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@next/swc-linux-arm64-musl'
+167 silly reify ]
+168 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@next/swc-linux-arm64-gnu
+169 silly reify mark deleted [
+169 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@next/swc-linux-arm64-gnu'
+169 silly reify ]
+170 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@next/swc-darwin-arm64
+171 silly reify mark deleted [
+171 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@next/swc-darwin-arm64'
+171 silly reify ]
+172 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-win32-x64
+173 silly reify mark deleted [
+173 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-win32-x64'
+173 silly reify ]
+174 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-win32-ia32
+175 silly reify mark deleted [
+175 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-win32-ia32'
+175 silly reify ]
+176 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-win32-arm64
+177 silly reify mark deleted [
+177 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-win32-arm64'
+177 silly reify ]
+178 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-wasm32
+179 silly reify mark deleted [
+179 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-wasm32'
+179 silly reify ]
+180 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-linuxmusl-x64
+181 silly reify mark deleted [
+181 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-linuxmusl-x64'
+181 silly reify ]
+182 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-linuxmusl-arm64
+183 silly reify mark deleted [
+183 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-linuxmusl-arm64'
+183 silly reify ]
+184 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-linux-x64
+185 silly reify mark deleted [
+185 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-linux-x64'
+185 silly reify ]
+186 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-linux-s390x
+187 silly reify mark deleted [
+187 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-linux-s390x'
+187 silly reify ]
+188 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-linux-ppc64
+189 silly reify mark deleted [
+189 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-linux-ppc64'
+189 silly reify ]
+190 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-linux-arm64
+191 silly reify mark deleted [
+191 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-linux-arm64'
+191 silly reify ]
+192 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-linux-arm
+193 silly reify mark deleted [
+193 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-linux-arm'
+193 silly reify ]
+194 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-libvips-linuxmusl-x64
+195 silly reify mark deleted [
+195 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-libvips-linuxmusl-x64'
+195 silly reify ]
+196 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-libvips-linuxmusl-arm64
+197 silly reify mark deleted [
+197 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-libvips-linuxmusl-arm64'
+197 silly reify ]
+198 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-libvips-linux-x64
+199 silly reify mark deleted [
+199 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-libvips-linux-x64'
+199 silly reify ]
+200 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-libvips-linux-s390x
+201 silly reify mark deleted [
+201 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-libvips-linux-s390x'
+201 silly reify ]
+202 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-libvips-linux-ppc64
+203 silly reify mark deleted [
+203 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-libvips-linux-ppc64'
+203 silly reify ]
+204 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-libvips-linux-arm64
+205 silly reify mark deleted [
+205 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-libvips-linux-arm64'
+205 silly reify ]
+206 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-libvips-linux-arm
+207 silly reify mark deleted [
+207 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-libvips-linux-arm'
+207 silly reify ]
+208 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-libvips-darwin-arm64
+209 silly reify mark deleted [
+209 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-libvips-darwin-arm64'
+209 silly reify ]
+210 verbose reify failed optional dependency /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-darwin-arm64
+211 silly reify mark deleted [
+211 silly reify   '/Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/node_modules/@img/sharp-darwin-arm64'
+211 silly reify ]
+212 http cache ecdsa-sig-formatter@https://registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.11.tgz 0ms (cache hit)
+213 http cache jwa@https://registry.npmjs.org/jwa/-/jwa-1.4.2.tgz 0ms (cache hit)
+214 http cache lodash.once@https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz 0ms (cache hit)
+215 http cache buffer-equal-constant-time@https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz 0ms (cache hit)
+216 http cache safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz 0ms (cache hit)
+217 http cache lodash.isstring@https://registry.npmjs.org/lodash.isstring/-/lodash.isstring-4.0.1.tgz 0ms (cache hit)
+218 http cache lodash.isplainobject@https://registry.npmjs.org/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz 0ms (cache hit)
+219 http cache lodash.isnumber@https://registry.npmjs.org/lodash.isnumber/-/lodash.isnumber-3.0.3.tgz 0ms (cache hit)
+220 http cache lodash.isinteger@https://registry.npmjs.org/lodash.isinteger/-/lodash.isinteger-4.0.4.tgz 0ms (cache hit)
+221 http cache lodash.includes@https://registry.npmjs.org/lodash.includes/-/lodash.includes-4.3.0.tgz 0ms (cache hit)
+222 http cache lodash.isboolean@https://registry.npmjs.org/lodash.isboolean/-/lodash.isboolean-3.0.3.tgz 0ms (cache hit)
+223 http cache jws@https://registry.npmjs.org/jws/-/jws-3.2.2.tgz 0ms (cache hit)
+224 http cache jsonwebtoken@https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-9.0.2.tgz 0ms (cache hit)
+225 silly tarball no local data for ecdsa-sig-formatter@https://registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.11.tgz. Extracting by manifest.
+226 silly tarball no local data for jwa@https://registry.npmjs.org/jwa/-/jwa-1.4.2.tgz. Extracting by manifest.
+227 silly tarball no local data for lodash.once@https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz. Extracting by manifest.
+228 silly tarball no local data for buffer-equal-constant-time@https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz. Extracting by manifest.
+229 silly tarball no local data for safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz. Extracting by manifest.
+230 silly tarball no local data for lodash.isstring@https://registry.npmjs.org/lodash.isstring/-/lodash.isstring-4.0.1.tgz. Extracting by manifest.
+231 silly tarball no local data for lodash.isplainobject@https://registry.npmjs.org/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz. Extracting by manifest.
+232 silly tarball no local data for lodash.isnumber@https://registry.npmjs.org/lodash.isnumber/-/lodash.isnumber-3.0.3.tgz. Extracting by manifest.
+233 silly tarball no local data for lodash.isinteger@https://registry.npmjs.org/lodash.isinteger/-/lodash.isinteger-4.0.4.tgz. Extracting by manifest.
+234 silly tarball no local data for lodash.includes@https://registry.npmjs.org/lodash.includes/-/lodash.includes-4.3.0.tgz. Extracting by manifest.
+235 silly tarball no local data for lodash.isboolean@https://registry.npmjs.org/lodash.isboolean/-/lodash.isboolean-3.0.3.tgz. Extracting by manifest.
+236 silly tarball no local data for jws@https://registry.npmjs.org/jws/-/jws-3.2.2.tgz. Extracting by manifest.
+237 silly tarball no local data for jsonwebtoken@https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-9.0.2.tgz. Extracting by manifest.
+238 http fetch GET 200 https://registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.11.tgz 119ms (cache miss)
+239 http fetch GET 200 https://registry.npmjs.org/jwa/-/jwa-1.4.2.tgz 119ms (cache miss)
+240 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 174ms
+241 silly audit report {}
+242 http fetch GET 200 https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz 166ms (cache miss)
+243 http fetch GET 200 https://registry.npmjs.org/lodash.isinteger/-/lodash.isinteger-4.0.4.tgz 230ms (cache miss)
+244 http fetch GET 200 https://registry.npmjs.org/lodash.isstring/-/lodash.isstring-4.0.1.tgz 232ms (cache miss)
+245 http fetch GET 200 https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz 242ms (cache miss)
+246 http fetch GET 200 https://registry.npmjs.org/lodash.includes/-/lodash.includes-4.3.0.tgz 241ms (cache miss)
+247 http fetch GET 200 https://registry.npmjs.org/jws/-/jws-3.2.2.tgz 240ms (cache miss)
+248 http fetch GET 200 https://registry.npmjs.org/lodash.isboolean/-/lodash.isboolean-3.0.3.tgz 248ms (cache miss)
+249 http fetch GET 200 https://registry.npmjs.org/lodash.isnumber/-/lodash.isnumber-3.0.3.tgz 252ms (cache miss)
+250 http fetch GET 200 https://registry.npmjs.org/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz 255ms (cache miss)
+251 http fetch GET 200 https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-9.0.2.tgz 252ms (cache miss)
+252 http fetch GET 200 https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz 334ms (cache miss)
+253 silly ADD node_modules/ecdsa-sig-formatter
+254 silly ADD node_modules/buffer-equal-constant-time
+255 silly ADD node_modules/safe-buffer
+256 silly ADD node_modules/jwa
+257 silly ADD node_modules/lodash.once
+258 silly ADD node_modules/lodash.isstring
+259 silly ADD node_modules/lodash.isplainobject
+260 silly ADD node_modules/lodash.isnumber
+261 silly ADD node_modules/lodash.isinteger
+262 silly ADD node_modules/lodash.isboolean
+263 silly ADD node_modules/lodash.includes
+264 silly ADD node_modules/jws
+265 silly ADD node_modules/jsonwebtoken
+266 silly ADD
+267 silly ADD
+268 silly ADD
+269 silly ADD
+270 silly ADD
+271 silly ADD
+272 silly ADD
+273 silly ADD
+274 silly ADD
+275 silly ADD
+276 silly ADD
+277 silly ADD
+278 silly ADD
+279 silly ADD
+280 silly ADD
+281 silly ADD
+282 silly ADD
+283 silly ADD
+284 silly ADD
+285 silly ADD
+286 silly ADD
+287 silly ADD
+288 silly ADD
+289 silly ADD
+290 silly ADD
+291 silly ADD
+292 silly ADD
+293 silly ADD
+294 silly ADD
+295 silly ADD
+296 silly ADD
+297 silly ADD
+298 silly ADD
+299 silly ADD
+300 silly ADD
+301 silly ADD
+302 silly ADD
+303 silly ADD
+304 silly ADD
+305 silly ADD
+306 silly ADD
+307 silly ADD
+308 silly ADD
+309 silly ADD
+310 silly ADD
+311 silly ADD
+312 silly ADD
+313 silly ADD
+314 silly ADD
+315 silly ADD
+316 silly ADD
+317 silly ADD
+318 silly ADD
+319 silly ADD
+320 silly ADD
+321 silly ADD
+322 silly ADD
+323 silly ADD
+324 silly ADD
+325 silly ADD
+326 silly ADD
+327 silly ADD
+328 silly ADD
+329 silly ADD
+330 silly ADD
+331 verbose cwd /Users/polite/AwesomeTicketSystem/AwesomeTicketSystem/frontend/prisma
+332 verbose os Darwin 21.6.0
+333 verbose node v22.17.1
+334 verbose npm  v10.9.2
+335 verbose exit 0
+336 info ok

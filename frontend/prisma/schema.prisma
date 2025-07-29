@@ -1,0 +1,90 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../lib/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Listies model
+model Listies {
+  id           Int        @id @default(autoincrement())
+  name         String     @db.VarChar(255)
+  description  String?
+  isFavorited  Boolean    @default(false)
+  categoriesId Int
+  categories   Categories @relation(fields: [categoriesId], references: [id])
+  user         User       @relation(fields: [userId], references: [id])
+  userId       Int
+  isDeleted    Boolean    @default(false)
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+}
+
+// Categories model
+model Categories {
+  id          Int       @id @default(autoincrement())
+  name        String?   @unique
+  description String?
+  user        User      @relation(fields: [userId], references: [id])
+  userId      Int
+  listies     Listies[]
+  imageUrl    String?
+  isDeleted   Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+// User model
+model User {
+  id              Int          @id @default(autoincrement())
+  email           String       @unique
+  name            String?      @unique
+  hash            String?
+  isActive        Boolean      @default(true)
+  isDeleted       Boolean      @default(false)
+  isFromReference Boolean      @default(false)
+  reference       Reference?   @relation(fields: [referenceId], references: [uuid])
+  referenceId     String?
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+  categories      Categories[]
+  Session         Session[]
+  Listies         Listies[]
+
+  @@map("users")
+}
+
+// Session model
+model Session {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  sessionId String
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("sessions")
+}
+
+// Reference model
+// The reference table will only be for email entry
+// Once the email has been clicked through and the 
+// user creates an account, the reference record will
+// be deleted
+model Reference {
+  id               Int      @id @default(autoincrement())
+  uuid             String   @unique
+  user             User[]
+  referredByUserId Int
+  isValidEmail     Boolean  @default(false)
+  createdAt        DateTime @default(now())
+}
