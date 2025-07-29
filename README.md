@@ -1,25 +1,31 @@
-# 🎟️ AwesomeTicketSystem
+# 📋 Listable
 
-**AwesomeTicketSystem** is a lightweight task management application that allows users to create, edit, update, and delete tickets for their everyday tasks. Whether it's a quick reminder or a long-running task, this system helps users stay organized and on track.
+Listable is a sleek, modern web application built with **Next.js** that helps users organize their lives through **collections**, **listies**, and integrated features like **chat support** and **email functionality**. It's designed to be flexible, fast, and easy to extend.
 
 ---
 
 ## 🚀 Features
 
-- 📝 **Create Tickets** — Log new tasks with custom titles and descriptions.
-- ✏️ **Edit Tickets** — Modify task details at any time.
-- 🔄 **Update Status** — Track progress by changing ticket status (e.g., Open, In Progress, Done).
-- ❌ **Delete Tickets** — Remove completed or obsolete tasks.
-- 🕒 **Timestamps** — Automatically records when tickets are created and updated.
+- ✨ Create and manage collections with images, names, and descriptions.
+- 📝 Add, edit, and delete “Listies” (custom items within a collection).
+- 🧠 Chat integration via OpenAI to suggest ideas or answer questions.
+- 💌 Built-in mailer modal to send styled messages to users.
+- 🖼️ Mosaic-style responsive grid layout for collections.
+- 🧱 Modular components like `CollectionsModal`, `ChatField`, and `Mailer`.
 
 ---
 
-## 🧰 Tech Stack
+## 🛠️ Tech Stack
 
-- **Frontend**: [Next.js](https://nextjs.org/)
-- **Backend**: [Node.js](https://nodejs.org/) + [Express](https://expressjs.com/)
-- **Database**: [SQLite](https://www.sqlite.org/index.html)
-
-> 🛠️ **Deployment**: Not currently deployed — runs locally for development and testing.
+| Tech         | Usage                       |
+|--------------|-----------------------------|
+| **Next.js**  | Full-stack React framework  |
+| **TypeScript** | Static typing for components and APIs |
+| **Tailwind CSS** | Modern utility-first styling |
+| **Lucide Icons** | For clean, lightweight UI icons |
+| **API Routes** | Custom logic for mail, chat, collections |
 
 ---
+
+## 📁 Project Structure
+
