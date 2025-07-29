@@ -16,10 +16,10 @@ interface Collection {
 const CollectionsPage = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [editedCollection, setEditedCollection] = useState({
+        id: 0,
         name: "",
         description: "",
-        imageUrl: "",
-        isDeleted: false
+        imageUrl: ""
     });
     const [collections, setCollections] = useState<Collection[]>([]);
     const [userId, setUserId] = useState<string | null>(null);
