@@ -36,8 +36,16 @@ export async function signIn(formData: FormData) {
     }
   }
 
+  if (!user.id) {
+    return {
+      errors: {
+        email: ['User ID not found'],
+      },
+    }
+  }
+
   // Create session
-  await createSessionAndCookie(uuidv4(), user.id)
+  await createSessionAndCookie(uuidv4(), user.id.toString());
 
   redirect('/collections')
 }

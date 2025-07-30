@@ -13,7 +13,7 @@ try {
         new TextEncoder().encode(getJwtSecretKey())
     );
     return verified.payload;
-} catch (error) {
+} catch (error:any) {
     throw new Error("Your token is expired");
 }
 }

@@ -18,9 +18,9 @@ export async function requireAuth() {
 // Removes the session from the database and removes the cookie
 export async function signOut() {
   const c = await cookies()
-  const sessionId = c.get('sessionId')?.value
-  const userId = c.get('userId')?.value
-  const id = c.get('id')?.value
+  const sessionId = c.get('sessionId')?.value || "";
+  const userId = c.get('userId')?.value || "";
+  const id = c.get('id')?.value || "";
 
   if (id && sessionId && userId) {
     await db.session.delete({
@@ -37,10 +37,10 @@ export async function signOut() {
 // Gets the current user info based on the sessionId cookie
 export async function getCurrentUser() {
   const c = await cookies()
-  const sessionId = c.get('sessionId')?.value
-  const userId = c.get('userId')?.value
+  const sessionId = c.get('sessionId')?.value || "";
+  const userId = c.get('userId')?.value || "";
 
-  if (!sessionId && !userId) return null
+  if (!sessionId && !userId && userId !== undefined) return null
 
   const session = await db.session.findFirst({
     where: { userId: parseInt(userId), sessionId: sessionId },
@@ -58,7 +58,7 @@ export async function getCurrentUser() {
 }
 
 // Create a session and set the sessionId cookie
-export async function createSessionAndCookie(sessionId, userId) {
+export async function createSessionAndCookie(sessionId:string, userId:string) {
   const SESSION_DURATION_DAYS = 7
   const expiresAt = new Date()
   expiresAt.setDate(expiresAt.getDate() + SESSION_DURATION_DAYS)
@@ -67,13 +67,13 @@ export async function createSessionAndCookie(sessionId, userId) {
     throw new Error('User ID is required to create a session')
   }
 
-  userId = parseInt(userId);
+  const intUserId = parseInt(userId);
 
   const session = await db.session.create({
     data: {
-        userId,
-        sessionId,
-        expiresAt
+        userId: intUserId,
+        sessionId: sessionId,
+        expiresAt: expiresAt
     },
   })
 
@@ -98,7 +98,7 @@ export async function createSessionAndCookie(sessionId, userId) {
     expires: new Date(session.expiresAt),
   });
 
-  c.set('userId', session.userId, {
+  c.set('userId', session.userId.toString(), {
     httpOnly: true,
     secure: process.env.NODE_ENV === 'production',
     sameSite: 'lax',

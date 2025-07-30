@@ -9,6 +9,12 @@ interface MailerProps {
   onClose: () => void;
 }
 
+interface User {
+  email: string;
+  collectionName: string;
+
+}
+
 const Mailer: React.FC<MailerProps> = ({ onClose }) => {
   const [form, setForm] = useState({
     to: '',
@@ -17,7 +23,7 @@ const Mailer: React.FC<MailerProps> = ({ onClose }) => {
     title: '',
     message: '',
   });
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<User>();
 
   const userData = async () => {
     try {
@@ -54,7 +60,7 @@ const Mailer: React.FC<MailerProps> = ({ onClose }) => {
     
   });
 
-  let guid = v4();
+  const guid = v4();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });

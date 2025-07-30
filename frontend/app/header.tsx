@@ -3,17 +3,21 @@
 import Link from "next/link";
 import Logout from "./logout";
 import { usePathname } from "next/navigation";
-import { LogOut, Tickets, User, Share2 } from 'lucide-react'; 
+import { Tickets, User, Share2 } from 'lucide-react'; 
 import { useEffect, useState } from "react";
 import Mailer from "../components/ui/mailer"
 
-export default function Header(props:any) {
+interface Props {
+  title: string;
+}
+
+export default function Header(props:Props) {
   const pathname = usePathname().replace("/", "");
   const [showMailer, setShowMailer] = useState(false);
-  const [collectionId, setCollectionId] = useState<number>(0);
+  const [collectionId, setCollectionId] = useState<number>();
 
   useEffect(() => {
-    let cId = new URLSearchParams(window.location.search).get('collectionId');
+    const cId = new URLSearchParams(window.location.search).get('collectionId');
 
     if (cId) {
       setCollectionId(parseInt(cId));

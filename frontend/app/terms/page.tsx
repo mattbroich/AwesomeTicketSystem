@@ -6,7 +6,7 @@ const Terms = () => {
             <h1 className="text-4xl font-extrabold text-purple-700">Terms and Conditions</h1>
             <p><b>Effective Date: July 21, 2025</b></p><br></br>
 
-            <p>Welcome to Listable! These Terms and Conditions ("Terms") govern your access to and use of the Listable website, products, and services (collectively, the "Service"). By accessing or using Listable, you agree to be bound by these Terms. If you do not agree, please do not use the Service.</p><br></br>
+            <p>Welcome to Listable! These Terms and Conditions (&quot;Terms&quot;) govern your access to and use of the Listable website, products, and services (collectively, the &quot;Service&quot;). By accessing or using Listable, you agree to be bound by these Terms. If you do not agree, please do not use the Service.</p><br></br>
 
             <p><b>1. Use of the Service</b></p>
             <p>You must be at least 13 years old to use Listable. By using the Service, you represent and warrant that you meet this requirement.</p><br></br>
@@ -32,19 +32,19 @@ const Terms = () => {
 
             <p>&bull;&nbsp;Transmit any malware, spam, or harmful code</p>
 
-            <p>&bull;&nbsp;Interfere with or disrupt the Service’s operation or security</p><br></br>
+            <p>&bull;&nbsp;Interfere with or disrupt the Service&apos;s operation or security</p><br></br>
 
             <p><b>5. Termination</b></p>
             <p>We reserve the right to suspend or terminate your access to the Service at any time, with or without notice, if you violate these Terms or misuse the platform.</p><br></br>
 
             <p><b>6. Disclaimer of Warranties</b></p>
-            <p>The Service is provided "as is" and "as available." Listable makes no warranties or guarantees regarding reliability, availability, or suitability for your specific needs.</p><br></br>
+            <p>The Service is provided &quot;as is&quot; and &quot;as available.&quot; Listable makes no warranties or guarantees regarding reliability, availability, or suitability for your specific needs.</p><br></br>
 
             <p><b>7. Limitation of Liability</b></p>
             <p>To the fullest extent permitted by law, Listable shall not be liable for any indirect, incidental, or consequential damages resulting from your use of the Service.</p><br></br>
 
             <p><b>8. Changes to These Terms</b></p>
-            <p>We may update these Terms from time to time. If changes are made, we will post the updated version and revise the "Effective Date" above. Your continued use of Listable constitutes acceptance of the updated Terms.</p><br></br>
+            <p>We may update these Terms from time to time. If changes are made, we will post the updated version and revise the &quot;Effective Date&quot; above. Your continued use of Listable constitutes acceptance of the updated Terms.</p><br></br>
 
             <p><b>9. Contact Us</b></p>
             <p>If you have any questions about these Terms, please contact us at:</p>

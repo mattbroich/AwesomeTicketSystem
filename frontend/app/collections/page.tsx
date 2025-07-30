@@ -4,7 +4,6 @@ import CollectionsModal from "../../components/collection-modal";
 import SubMenu from "../../components/sub-menu";
 import { useEffect, useState } from "react";
 import Collections from "../../components/collections";
-import { getCookie } from 'cookies-next'; 
 
 interface Collection {
     id: number;
@@ -24,7 +23,7 @@ const CollectionsPage = () => {
     const [collections, setCollections] = useState<Collection[]>([]);
     const [userId, setUserId] = useState<string | null>(null);
 
-    const handleInputChange = (field: string, value: any) => {
+    const handleInputChange = (field: string, value: string) => {
         setEditedCollection({
             ...editedCollection,
             [field]: value
@@ -63,7 +62,7 @@ const CollectionsPage = () => {
     
             const data = await response.json();
             if (response.ok) {
-                const collectionArray: Collection[] = (data.collections || []).map((collection: any) => ({
+                const collectionArray: Collection[] = (data.collections || []).map((collection: Collection) => ({
                     id: collection.id,
                     name: collection.name,
                     description: collection.description || "",

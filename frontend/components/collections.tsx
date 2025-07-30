@@ -4,6 +4,7 @@
 import { Trash2 } from "lucide-react";
 import { useEffect, useState } from "react";
 import CollectionsModal from "./collection-modal";
+import { useRouter } from "next/navigation";
 
 interface Collection {
   id: number;
@@ -25,6 +26,8 @@ const Collections: React.FC<Props> = ({ collections }) => {
     description: "",
     imageUrl: "",
   });
+
+  const router = useRouter();
 
   // Sync with incoming props
   useEffect(() => {
@@ -95,8 +98,8 @@ const Collections: React.FC<Props> = ({ collections }) => {
                   className="text-lg font-semibold text-gray-800 hover:underline hover:text-purple-600 transition cursor-pointer"
                   onClick={(e) => {
                     e.stopPropagation();
-                    location.href = `/listies?collectionId=${collection.id}`;
-                  }}
+                    router.push(`/listies?collectionId=${collection.id}`);
+                }}
                 >
                   {collection.name}
                 </h3>

@@ -25,7 +25,7 @@ const handler = NextAuth({
         email: {},
         password: {}
       },
-      async authorize(credentials, req) {
+      async authorize(credentials) {
         const id = await cookies().get("id")?.value;
 
         if (!credentials?.email) {
